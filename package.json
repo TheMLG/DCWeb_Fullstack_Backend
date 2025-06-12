@@ -1,0 +1,23 @@
+{
+  "name": "dc_backend",
+  "version": "1.0.0",
+  "description": "This is the simple backend for the Dashnam CIrcular website",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dashnam",
+    "circular"
+  ],
+  "author": "Manthan Goswami",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1",
+    "nodemon": "^3.1.10"
+  }
+}
