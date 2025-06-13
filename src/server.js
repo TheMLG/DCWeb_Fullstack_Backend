@@ -2,7 +2,6 @@ import dotenv from "dotenv";
 import connectDB from "./db/connectdb.js";
 import express from "express";
 import cors from "cors";
-import reviewRoute from "./routes/reviewRoute.js"
 dotenv.config({
     path: '../.env'
 });
@@ -22,6 +21,12 @@ app.get('/', (_req, res) => {
     res.json({ message: 'API is running' });
 });
 
+import reviewRoute from "./routes/reviewRoute.js"
+import contributeRoute from "./routes/contributeRoute.js";
+import fundRoute from "./routes/fundRoute.js"
+
+app.use('/api/fund', fundRoute)
+app.use('/api/contribute', contributeRoute)
 app.use('/api/reviews', reviewRoute);
 
 // Start server
