@@ -25,11 +25,13 @@ import reviewRoute from "./routes/reviewRoute.js"
 import contributeRoute from "./routes/contributeRoute.js";
 import fundRoute from "./routes/fundRoute.js"
 import advertisementRoute from "./routes/advertisementRoute.js"
+import adminRoute from "./routes/adminRoute.js"
 
 app.use('/api/fund', fundRoute)
 app.use('/api/contribute', contributeRoute)
 app.use('/api/reviews', reviewRoute);
 app.use('/api/advertisement', advertisementRoute);
+app.use('/api/mag', adminRoute);
 
 // Start server
 app.listen(PORT, () => {
