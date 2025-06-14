@@ -24,10 +24,12 @@ app.get('/', (_req, res) => {
 import reviewRoute from "./routes/reviewRoute.js"
 import contributeRoute from "./routes/contributeRoute.js";
 import fundRoute from "./routes/fundRoute.js"
+import advertisementRoute from "./routes/advertisementRoute.js"
 
 app.use('/api/fund', fundRoute)
 app.use('/api/contribute', contributeRoute)
 app.use('/api/reviews', reviewRoute);
+app.use('/api/advertisement', advertisementRoute);
 
 // Start server
 app.listen(PORT, () => {
