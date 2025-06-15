@@ -26,7 +26,9 @@ import contributeRoute from "./routes/contributeRoute.js";
 import fundRoute from "./routes/fundRoute.js"
 import advertisementRoute from "./routes/advertisementRoute.js"
 import adminRoute from "./routes/adminRoute.js"
+import galaryRoute from "./routes/galaryroute.js"
 
+app.use('/api/gallery', galaryRoute);
 app.use('/api/fund', fundRoute)
 app.use('/api/contribute', contributeRoute)
 app.use('/api/reviews', reviewRoute);
