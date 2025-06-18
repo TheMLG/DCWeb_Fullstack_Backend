@@ -2,9 +2,10 @@ import dotenv from "dotenv";
 import connectDB from "./db/connectdb.js";
 import express from "express";
 import cors from "cors";
-dotenv.config({
-    path: '../.env'
-});
+
+if (process.env.NODE_ENV !== 'production') {
+    dotenv.config();
+}
 
 
 

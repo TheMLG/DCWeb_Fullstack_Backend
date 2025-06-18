@@ -4,8 +4,9 @@
   "description": "This is the simple backend for the Dashnam CIrcular website",
   "main": "server.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
   },
   "keywords": [
     "dashnam",

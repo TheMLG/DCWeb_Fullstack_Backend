@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: dc-backend
+    env: node
+    plan: free
+    buildCommand: 'npm install'
+    startCommand: 'npm start'
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Add other environment variables like DB connection string here
+      # - key: MONGODB_URI
+      #   fromDatabase:
+      #     name: your-database
+      #     key: connectionString
