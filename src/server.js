@@ -34,7 +34,7 @@ import contributeRoute from "./routes/contributeRoute.js";
 import fundRoute from "./routes/fundRoute.js"
 import advertisementRoute from "./routes/advertisementRoute.js"
 import adminRoute from "./routes/adminRoute.js"
-import galaryRoute from "./routes/galaryroute.js"
+import galaryRoute from "./routes/galaryRoute.js"
 import visitorRoute from "./routes/visitorRoute.js"
 
 app.use('/api/visitor-count', visitorRoute);
